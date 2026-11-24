@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://albertbottos.github.io/hand-chain/sitemap.xml
