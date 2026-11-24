@@ -67,11 +67,12 @@ nothing here sells anything.
 
 ## Canonical origin
 
-The canonical URLs assume GitHub Pages at
-`https://albertbottos.github.io/hand-chain/`. If the site moves to its own
-domain, the origin is used in exactly four places per page — canonical,
+The canonical origin is `https://hand-chain-dev.digitalbuildr.com/`, the host
+the site is served from. It is used in exactly four places per page — canonical,
 `og:url`, JSON-LD `url`, JSON-LD `mainEntityOfPage` — plus `sitemap.xml` and
-`robots.txt`. Search and replace the origin, not the paths.
+`robots.txt`. The path is the page's own file name, with the home page at `/`,
+so every canonical names a file the server returns; there are no extensionless
+URLs. Search and replace the origin, not the paths.
 
 ## Still open
 
@@ -81,5 +82,6 @@ domain, the origin is used in exactly four places per page — canonical,
   both need a site name, logo and image assets first.
 - `datePublished` in the schema and the visible "Updated" line are build dates.
   Replace them with real publish dates when the pages go live.
-- Sitemap and robots point at the Pages origin above; the site has not been
-  deployed, so those URLs are not live yet.
+- Sitemap and robots point at the live origin above; nothing has been deployed
+  yet — the host answered 503 when checked on 24 November 2026, so those URLs
+  do not resolve.
