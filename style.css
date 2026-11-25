@@ -112,6 +112,7 @@ figcaption{display:block}
    would be, so the copy never starts at the grid's text column. */
 .page{padding-top:clamp(1.9rem,4vw,3rem); padding-bottom:clamp(2rem,4.2vw,3.25rem)}
 .page .grid{align-items:start}
+.page .folio{margin:0}   /* the eyebrow is a <p>: a default margin would push it off the numeral column */
 .page__rail{padding-top:.5rem}
 .page__body{grid-column:4/12}
 .page__title{margin:0; max-width:20ch; font:600 clamp(2.3rem,4.8vw,3.8rem)/1.04 var(--sans);
@@ -233,7 +234,7 @@ table.fit .fit__val{text-align:right; padding-right:var(--edge); white-space:now
   .hero__title{font-size:clamp(3.2rem,7.4vw,6rem)}
 }
 @media (max-width:60rem){
-  .page__rail{padding-top:.15rem}
+  .page__rail{padding-top:.85rem}
   .page__body{grid-column:1/13; margin-top:1.15rem}
   .hero{padding-bottom:0}
   .hero .grid{grid-template-rows:auto auto auto; row-gap:clamp(1.75rem,4vw,2.5rem)}
