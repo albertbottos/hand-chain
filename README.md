@@ -85,3 +85,7 @@ URLs. Search and replace the origin, not the paths.
 - Sitemap and robots point at the live origin above; nothing has been deployed
   yet — the host answered 503 when checked on 24 November 2026, so those URLs
   do not resolve.
+## Live
+
+- Dev: https://hand-chain-dev.digitalbuildr.com
+- Deploy: Coolify app `tp1j26ftf2brku0urquyc74l`, static build pack, auto-deploy on push to `main`.
